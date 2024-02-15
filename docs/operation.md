@@ -85,22 +85,66 @@ OPERATION (...) ... DIVIDE(Value)
 #### Drop Null Values
 
 ``` sql
-OPERATION (...) ... DROPNA(Value)
+OPERATION (...) ... DROPNA()
 ```
 ```
-DROPNA(10)
+DROPNA()
 ```
 ```
 t  |  Signal         t  |  Signal
 ---|--------         ---|--------
-1  |      10   -->   1  |       1
-2  |       5         2  |     0.5    
+1  |      10   -->   1  |      10
+2  |     NaN         3  |       5
+3  |       5           
 ```  
 
+#### Rename Column
+``` sql
+OPERATION (...) ... RENAME(Name)
+```
+```
+RENAME(New_Signal)
+```
+```
+t  |  Signal         t  |  New_Signal
+---|--------         ---|------------
+1  |      10   -->   1  |          10
+2  |       5         2  |           5    
+```  
 
-#### Max
+#### Maximum
+If no number specified, Number will default to 1
 
-#### Min
+``` sql
+OPERATION (...) ... MAX(Number?)
+```
+```
+MAX(2)
+```
+```
+t  |  Signal         t  |  Signal
+---|--------         ---|--------
+1  |      10   -->   1  |      10
+2  |       3         3  |       5
+3  |       5         
+```  
+
+#### Minimum
+If no number specified, Number will default to 1
+
+``` sql
+OPERATION (...) ... MIN(Number?)
+```
+```
+MIN(2)
+```
+```
+t  |  Signal         t  |  Signal
+---|--------         ---|--------
+1  |      10   -->   3  |       3
+2  |       5         2  |       5
+3  |       3         
+```  
 
 #### Sort signal
 
@@ -113,6 +157,8 @@ t  |  Signal         t  |  Signal
 #### Get above
 
 #### Get below
+
+
 
 
 
