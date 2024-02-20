@@ -1,15 +1,23 @@
-# Load
+# Snapshot
 
-The Load step is the most imporant of all the steps. It is responsible for retrieving data from the various data sources and making it available to any steps that follow. However, it is also one of the easiest steps to learn.
+This is the simplest of the operations. It is an easy way to view a snippet of the data you are creating.
+
+The syntax is as follows,
 
 ```
-LOAD (Name) source device signal <date from> <date to>
+SNAPSHOT (Name) Data_Name
 ```
-Example
+For example
+
 ```
-LOAD   (Eng_Speed)  s3  2A711C91 iwEngineSpeed  <18/01/24,04:00:00>  <18/01/24,04:04:05>
+LOAD (Name) ... iwEngineSpeed ...
+
+SNAPSHOT (Snap_1) Name
 ```
 ```
+(In Output Terminal)
+
+SNAPSHOT (Eng_Speed) 
                              t  iwEngineSpeed
 0   2024-01-18 04:00:00.062800         1982.0
 1   2024-01-18 04:00:00.322650         1982.0
@@ -22,4 +30,7 @@ LOAD   (Eng_Speed)  s3  2A711C91 iwEngineSpeed  <18/01/24,04:00:00>  <18/01/24,0
 921 2024-01-18 04:03:59.221350         1110.0
 922 2024-01-18 04:03:59.484850         1292.0
 923 2024-01-18 04:03:59.740400         1495.0
+
+[924 rows x 2 columns]
+
 ```

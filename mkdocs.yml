@@ -1,4 +1,4 @@
-site_name: Elphinstone Cloud Control Docs
+site_name: Elphinstone Cloud Connect Docs
 theme:
   name: material
   features:
@@ -26,6 +26,7 @@ theme:
       primary: amber
       accent: green 
   logo: assets/Logo.png
+  favicon: assets/Logo.png
 
 markdown_extensions:
   - pymdownx.highlight:
