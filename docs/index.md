@@ -40,12 +40,23 @@ TYPE (Name) ...
 
 ### Types
 
-#### Load
+**Load**
+Loading from data source
 
-#### Operate
+**Operate**
+Operate on data
 
-#### Combine
+**Combine**
+Combine single column data
 
-#### Table
+**Table**
+Create multicolumn data
 
-#### 
+**Export**
+Export data to excel
+
+**Plot**
+Plot data visualisations
+
+**Snapshot**
+Quickly check data

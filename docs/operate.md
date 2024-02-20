@@ -1,8 +1,8 @@
 # Operate
 
-The operate step is the most powerful but also the hardest step to learn. It lets you take any data and perform a series of sequential operations on it. These operations are simple but when combined together can acheive complex behaviour.
+The operate step is the most powerful but also the hardest step to learn. It lets you take any data and perform a series of sequential OPERATEs on it. These OPERATEs are simple but when combined together can acheive complex behaviour.
 
-Most operations can be performed on single and multicolumn data but some operations only work on single column data. Some operate functions are also denoted as **finishing** this is because the data they output cannot be operated on and can only be used in steps such as Snapshot and Export.
+Most OPERATEs can be performed on single and multicolumn data but some OPERATEs only work on single column data. Some operate functions are also denoted as **finishing** this is because the data they output cannot be operated on and can only be used in steps such as Snapshot and Export.
 
 You are also not limited to how many operate steps you can perform. However, each operate step will need a new name otherwise the data will be overwritten.
 
@@ -20,13 +20,11 @@ These are functions that produce operable data, this is data that can be used in
 ### Non-Chainable (N)
 These are functions that produce operable data, this is data that can be used in another process
 
+### Single Column (S)
+These functions will only work if the data input has a single column, therefore these functions will not work with data from a TABLE OPERATE.
 
 ### Flexible (F)
 These functions work with both single and multicolumn data
-
-### Single Column (S)
-These functions will only work if the data input has a single column, therefore these functions will not work with data from a TABLE operation.
-
 
 ## Functions
 The functions execute sequentially from left to right, each has a name identifier and an argument input
@@ -37,7 +35,7 @@ The functions execute sequentially from left to right, each has a name identifie
 The add function adds any number to all values in a table
 
 ``` sql
-OPERATION (...) ... ADD(Value)
+OPERATE (...) ... ADD(Value)
 ```
 ```
 ADD(10)
@@ -54,7 +52,7 @@ t  |  Signal         t  |  Signal
 The subract function subtracts any number from values in a table
 
 ``` sql
-OPERATION (...) ... SUBTRACT(Value)
+OPERATE (...) ... SUBTRACT(Value)
 ```
 ```
 SUBTRACT(10)
@@ -71,7 +69,7 @@ t  |  Signal         t  |  Signal
 The divide function divides all values in table
 
 ``` sql
-OPERATION (...) ... MULTIPLY(Value)
+OPERATE (...) ... MULTIPLY(Value)
 ```
 ```
 MULTIPLY(10)
@@ -88,7 +86,7 @@ t  |  Signal         t  |  Signal
 The divide function divides all values in table
 
 ``` sql
-OPERATION (...) ... DIVIDE(Value)
+OPERATE (...) ... DIVIDE(Value)
 ```
 ```
 DIVIDE(10)
@@ -102,7 +100,7 @@ t  |  Signal         t  |  Signal
 
 ### Rename Column (C,S)
 ``` sql
-OPERATION (...) ... RENAME(Name)
+OPERATE (...) ... RENAME(Name)
 ```
 ```
 RENAME(New_Signal)
@@ -115,11 +113,30 @@ t  |  Signal         t  |  New_Signal
 ```  
 
 
+### Resample (C,F)
+Resamples the data to meet a specified time frequency, has a variety of methods for resampling the data
+``` sql
+OPERATE (...) ... RESAMPLE(time,method)
+```
+Resampling Methods
+#### Max
+Gets max value from each resampled window
+
+#### Min
+Gets min value from each resampled window
+
+#### Mean
+Gets mean value from each resampled window
+
+
+#### Sum
+Sums all values in resampling window
+
 
 ### Remove Gaps (C,F)
 
 ``` sql
-OPERATION (...) ... DROPGAP()
+OPERATE (...) ... DROPGAP()
 ```
 ```
 DROPGAP()
@@ -145,32 +162,32 @@ t  |  one|  two         t  |  one|  two
 ### Fill Gaps (C,F)
 Fills gaps in data with a specified value
 ``` sql
-OPERATION (...) ... FILLGAP(value)
+OPERATE (...) ... FILLGAP(value)
 ```
 
 ### Forward Fill Gaps (C,F)
 Fills gaps with previously found data, will fill an unlimited amount of gaps after a data point. If specified can limit the fill reach
 ``` sql
-OPERATION (...) ... FFILL(number?)
+OPERATE (...) ... FFILL(number?)
 ```
 
 ### Back Fill Gaps (C,F)
 Fills gaps with values ahead if found, will fill an unlimited amount of gaps before a data point. If specified can limit the fill reach
 ``` sql
-OPERATION (...) ... BFILL(number?)
+OPERATE (...) ... BFILL(number?)
 ```
 
 ### Interpolate (C,F)
 Fills gaps using linear interpolation between existing data points and gaps
 ``` sql
-OPERATION (...) ... INTERPOLATE(number?)
+OPERATE (...) ... INTERPOLATE(number?)
 ```
 
 ### Maximum (C,F)
 If no number specified, Number will default to 1
 
 ``` sql
-OPERATION (...) ... MAX(Number?)
+OPERATE (...) ... MAX(Number?)
 ```
 ```
 MAX(2)
@@ -194,12 +211,11 @@ t  |  one|  two         t  |  one|  two
 ```  
 
 
-
 ### Minimum (C,F)
 If no number specified, Number will default to 1
 
 ``` sql
-OPERATION (...) ... MIN(Number?)
+OPERATE (...) ... MIN(Number?)
 ```
 ```
 MIN(2)
@@ -228,36 +244,57 @@ Sorts the data in ascending order with the first column taking precedence, then 
 If Sort is specified with a 1 in the arguments it will sort in descending order
 
 ``` sql
-OPERATION (...) ... SORT(1?)
+OPERATE (...) ... SORT(1?)
 ```
 
 ### Sort Time (C,F)
 Sorts time into ascending order
 
 ``` sql
-OPERATION (...) ... SORTTIME()
+OPERATE (...) ... SORTTIME()
 ```
 
-##### Get duplicates
+### Get duplicates (C,F)
+Removes values that do not occur more than once
+``` sql
+OPERATE (...) ... GETDUPLICATES()
+```
 
-##### Remove duplicates
+### Remove duplicates (C,F)
+removes values that occur more than once
+``` sql
+OPERATE (...) ... DROPDUPLICATES()
+```
 
-##### Get above
+### Get above (C,F)
+removes values that are not above specified value
+``` sql
+OPERATE (...) ... ABOVE(value)
+```
 
-##### Get below
+### Get below (C,F)
+removes values that are not below specified value
+``` sql
+OPERATE (...) ... BELOW(value)
+```
 
-#### Multiple Column
-These are functions which only work on table, no functions are currently covered by this description\
+### Mean (N,F)
+Find the mean of each colunm and return this data
+``` sql
+OPERATE (...) ... MEAN()
+```
 
-#### Mean
+### Median (N,F)
+Finds the median for each column and return this data
+``` sql
+OPERATE (...) ... MEDIAN()
+```
 
-#### Median
+### Count (N,F)
+Counts number of values in each column and returns this data
+``` sql
+OPERATE (...) ... COUNT()
+```
 
-#### Count
 
-#### Outliers
-#### Rename
-#### Drop Name
-
-## Advanced
 

@@ -6,38 +6,56 @@ There are a few available plot types, all will work with any provided data but s
 
 The Plots shown below are from a very small dataset, this step is still in testing.
 
-### Line
+## Format
+
+The Plot format can save to a variety of formats, these are selected with the last step argument
+
+**PDF**
+```
+PLOT (...) ... (...) .pdf
+```
+**PNG**
+```
+PLOT (...) ... (...) .png
+```
+
+**SVG**
+```
+PLOT (...) ... (...) .svg
+```
+
+## Line
 ```
 PLOT (Plot_Line) Plot_Data LINE(title,x,y) .png
 ```
 
 ![alt text](./assets/Plot_1.png "Title")
 
-### Bar
+## Bar
 ```
 PLOT (Plot_Bar) Plot_Data BAR(title,x,y) .png
 ```
 
 ![alt text](./assets/Plot_2.png "Title")
 
-### Horizontal Bar
+## Horizontal Bar
 ```
 PLOT (Plot_HBar) Plot_Data BARH(title,x,y) .png
 ```
 
 ![alt text](./assets/Plot_3.png "Title")
 
-### Area
+## Area
 ```
 PLOT (Plot_Area) Plot_Data AREA(title,x,y) .png
 ```
 
 ![alt text](./assets/Plot_5.png "Title")
 
-### Histogram
+## Histogram
 
 Not currently available
 
-### Scatter
+## Scatter
 
 Not currently available

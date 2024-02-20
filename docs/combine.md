@@ -5,5 +5,28 @@ Single column data sets can be added, subtracted, divided or multiplied by each 
 
 There are 5 combine types currently available throught the combine step with more options set to come soon.
 
-## Types
+## Multiply
 
+```
+COMBINE (Name) Data_1 Data_2 MULTIPLY(time_interval)
+```
+
+## Divide
+```
+COMBINE (Name) Data_1 Data_2 DIVIDE(time_interval)
+```
+
+## Add
+```
+COMBINE (Name) Data_1 Data_2 ADD(time_interval)
+```
+
+## Subtract
+```
+COMBINE (Name) Data_1 Data_2 SUBTRACT(time_interval)
+```
+
+## Merge
+```
+COMBINE (Name) Data_1 Data_2 MERGE(time_interval)
+```

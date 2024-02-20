@@ -4,6 +4,8 @@ The export is a very important tool as it lets you put the data into a format yo
 
 If you need to seperate different data into different excel files just call the Export function again and give it a different name. Note that the export step does not create any operational data, it only saves data to excel in the specified output folder.
 
+
+## Syntax
 The function can be called as follows:
 
 ```

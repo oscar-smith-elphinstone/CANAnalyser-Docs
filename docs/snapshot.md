@@ -2,7 +2,7 @@
 
 This is the simplest of the operations. It is an easy way to view a snippet of the data you are creating.
 
-The syntax is as follows,
+## Syntax
 
 ```
 SNAPSHOT (Name) Data_Name

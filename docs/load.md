@@ -2,11 +2,11 @@
 
 The Load step is the most imporant of all the steps. It is responsible for retrieving data from the various data sources and making it available to any steps that follow. However, it is also one of the easiest steps to learn.
 
-```
+``` sql
 LOAD (Name) source device signal <date from> <date to>
 ```
 Example
-```
+``` sql
 LOAD   (Eng_Speed)  s3  2A711C91 iwEngineSpeed  <18/01/24,04:00:00>  <18/01/24,04:04:05>
 ```
 ```
