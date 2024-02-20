@@ -1,0 +1,1165 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../load/">
+      
+      
+        <link rel="next" href="../plot/">
+      
+      
+      <link rel="icon" href="../assets/Logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Operate - Elphinstone Cloud Connect Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#operate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elphinstone Cloud Connect Docs" class="md-header__button md-logo" aria-label="Elphinstone Cloud Connect Docs" data-md-component="logo">
+      
+  <img src="../assets/Logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elphinstone Cloud Connect Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Operate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../combine/" class="md-tabs__link">
+        
+  
+    
+  
+  Combine
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../export/" class="md-tabs__link">
+        
+  
+    
+  
+  Export
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../load/" class="md-tabs__link">
+        
+  
+    
+  
+  Load
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Operate
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../plot/" class="md-tabs__link">
+        
+  
+    
+  
+  Plot
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../snapshot/" class="md-tabs__link">
+        
+  
+    
+  
+  Snapshot
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../table/" class="md-tabs__link">
+        
+  
+    
+  
+  Table
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elphinstone Cloud Connect Docs" class="md-nav__button md-logo" aria-label="Elphinstone Cloud Connect Docs" data-md-component="logo">
+      
+  <img src="../assets/Logo.png" alt="logo">
+
+    </a>
+    Elphinstone Cloud Connect Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../combine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../load/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Operate
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Operate
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anatomy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chainable-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chainable (C)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-chainable-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Chainable (N)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-column-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single Column (S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexible-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexible (F)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add (C,S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtract-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subtract (C,S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiply-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiply (C,S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divide (C,S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-column-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename Column (C,S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resample-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resample (C,F)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resample (C,F)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#max" class="md-nav__link">
+    <span class="md-ellipsis">
+      Max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Min
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-gaps-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Gaps (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-gaps-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fill Gaps (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-fill-gaps-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward Fill Gaps (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-fill-gaps-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back Fill Gaps (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolate-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolate (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximum-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimum-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-signal-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sort Signal (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-time-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sort Time (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-duplicates-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get duplicates (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-duplicates-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove duplicates (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-above-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get above (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-below-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get below (C,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mean-nf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mean (N,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median-nf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Median (N,F)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-nf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Count (N,F)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snapshot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snapshot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="operate">Operate</h1>
+<p>The operate step is the most powerful but also the hardest step to learn. It lets you take any data and perform a series of sequential OPERATEs on it. These OPERATEs are simple but when combined together can acheive complex behaviour.</p>
+<p>Most OPERATEs can be performed on single and multicolumn data but some OPERATEs only work on single column data. Some operate functions are also denoted as <strong>finishing</strong> this is because the data they output cannot be operated on and can only be used in steps such as Snapshot and Export.</p>
+<p>You are also not limited to how many operate steps you can perform. However, each operate step will need a new name otherwise the data will be overwritten.</p>
+<h2 id="anatomy">Anatomy</h2>
+<p>All operate steps follow the same syntax
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OPERATE (Name) Data_Name FUNC1(args) FUNC2(args) ... 
+</code></pre></div></p>
+<h2 id="function-types">Function types</h2>
+<h3 id="chainable-c">Chainable (C)</h3>
+<p>These are functions that produce operable data, this is data that can be used in another process</p>
+<h3 id="non-chainable-n">Non-Chainable (N)</h3>
+<p>These are functions that produce operable data, this is data that can be used in another process</p>
+<h3 id="single-column-s">Single Column (S)</h3>
+<p>These functions will only work if the data input has a single column, therefore these functions will not work with data from a TABLE OPERATE.</p>
+<h3 id="flexible-f">Flexible (F)</h3>
+<p>These functions work with both single and multicolumn data</p>
+<h2 id="functions">Functions</h2>
+<p>The functions execute sequentially from left to right, each has a name identifier and an argument input</p>
+<h3 id="add-cs">Add (C,S)</h3>
+<p>The add function adds any number to all values in a table</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">ADD</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ADD(10)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>---|--------         ---|--------
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>1  |      10   --&gt;   1  |      20
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>2  |       5         2  |      15    
+</code></pre></div></p>
+<h3 id="subtract-cs">Subtract (C,S)</h3>
+<p>The subract function subtracts any number from values in a table</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">SUBTRACT</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>SUBTRACT(10)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>---|--------         ---|--------
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>1  |      10   --&gt;   1  |       0
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>2  |       5         2  |      -5    
+</code></pre></div></p>
+<h3 id="multiply-cs">Multiply (C,S)</h3>
+<p>The divide function divides all values in table</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">MULTIPLY</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>MULTIPLY(10)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>---|--------         ---|--------
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>1  |      10   --&gt;   1  |     100
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>2  |       5         2  |      50    
+</code></pre></div></p>
+<h3 id="divide-cs">Divide (C,S)</h3>
+<p>The divide function divides all values in table</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">DIVIDE</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>DIVIDE(10)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>---|--------         ---|--------
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>1  |      10   --&gt;   1  |       1
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>2  |       5         2  |     0.5    
+</code></pre></div></p>
+<h3 id="rename-column-cs">Rename Column (C,S)</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">RENAME</span><span class="p">(</span><span class="n">Name</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>RENAME(New_Signal)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>t  |  Signal         t  |  New_Signal
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>---|--------         ---|------------
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>1  |      10   --&gt;   1  |          10
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>2  |       5         2  |           5    
+</code></pre></div></p>
+<h3 id="resample-cf">Resample (C,F)</h3>
+<p>Resamples the data to meet a specified time frequency, has a variety of methods for resampling the data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">RESAMPLE</span><span class="p">(</span><span class="k">time</span><span class="p">,</span><span class="k">method</span><span class="p">)</span>
+</code></pre></div>
+Resampling Methods</p>
+<h4 id="max">Max</h4>
+<p>Gets max value from each resampled window</p>
+<h4 id="min">Min</h4>
+<p>Gets min value from each resampled window</p>
+<h4 id="mean">Mean</h4>
+<p>Gets mean value from each resampled window</p>
+<h4 id="sum">Sum</h4>
+<p>Sums all values in resampling window</p>
+<h3 id="remove-gaps-cf">Remove Gaps (C,F)</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">DROPGAP</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>DROPGAP()
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>---|--------         ---|--------
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>1  |      10   --&gt;   1  |      10
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>2  |     NaN         3  |       5
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>3  |       5           
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>DROPGAP()
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>t  |  one|  two         t  |  one|  two
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>---|-----|-----         ---|-----|-----
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>1  |   10|  NaN   --&gt;   3  |    5|    3
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>2  |  NaN|    7         
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>3  |    5|    3         
+</code></pre></div></p>
+<h3 id="fill-gaps-cf">Fill Gaps (C,F)</h3>
+<p>Fills gaps in data with a specified value
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">FILLGAP</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="forward-fill-gaps-cf">Forward Fill Gaps (C,F)</h3>
+<p>Fills gaps with previously found data, will fill an unlimited amount of gaps after a data point. If specified can limit the fill reach
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">FFILL</span><span class="p">(</span><span class="nb">number</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="back-fill-gaps-cf">Back Fill Gaps (C,F)</h3>
+<p>Fills gaps with values ahead if found, will fill an unlimited amount of gaps before a data point. If specified can limit the fill reach
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">BFILL</span><span class="p">(</span><span class="nb">number</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="interpolate-cf">Interpolate (C,F)</h3>
+<p>Fills gaps using linear interpolation between existing data points and gaps
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">INTERPOLATE</span><span class="p">(</span><span class="nb">number</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="maximum-cf">Maximum (C,F)</h3>
+<p>If no number specified, Number will default to 1</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="nb">Number</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>MAX(2)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>---|--------         ---|--------
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>1  |      10   --&gt;   1  |      10
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>2  |       3         3  |       5
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>3  |       5         
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>MAX(2)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>t  |  one|  two         t  |  one|  two
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>---|-----|-----         ---|-----|-----
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>1  |   10|    1   --&gt;   2  |   10|    4
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>2  |   10|    4         1  |   10|    1
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>3  |    5|    3         
+</code></pre></div></p>
+<h3 id="minimum-cf">Minimum (C,F)</h3>
+<p>If no number specified, Number will default to 1</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">MIN</span><span class="p">(</span><span class="nb">Number</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>MIN(2)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>t  |  Signal         t  |  Signal
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>---|--------         ---|--------
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>1  |      10   --&gt;   3  |       3
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>2  |       5         2  |       5
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>3  |       3         
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>MIN(2)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>t  |  one|  two         t  |  one|  two
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>---|-----|-----         ---|-----|-----
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>1  |   10|    1   --&gt;   3  |    5|    3
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>2  |   10|    4         1  |   10|    1
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>3  |    5|    3         
+</code></pre></div></p>
+<h3 id="sort-signal-cf">Sort Signal (C,F)</h3>
+<p>Sorts the data in ascending order with the first column taking precedence, then the second, then ...</p>
+<p>If Sort is specified with a 1 in the arguments it will sort in descending order</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">SORT</span><span class="p">(</span><span class="mi">1</span><span class="o">?</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="sort-time-cf">Sort Time (C,F)</h3>
+<p>Sorts time into ascending order</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">SORTTIME</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="get-duplicates-cf">Get duplicates (C,F)</h3>
+<p>Removes values that do not occur more than once
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">GETDUPLICATES</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="remove-duplicates-cf">Remove duplicates (C,F)</h3>
+<p>removes values that occur more than once
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">DROPDUPLICATES</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="get-above-cf">Get above (C,F)</h3>
+<p>removes values that are not above specified value
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">ABOVE</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="get-below-cf">Get below (C,F)</h3>
+<p>removes values that are not below specified value
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">BELOW</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="mean-nf">Mean (N,F)</h3>
+<p>Find the mean of each colunm and return this data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">MEAN</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="median-nf">Median (N,F)</h3>
+<p>Finds the median for each column and return this data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">MEDIAN</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="count-nf">Count (N,F)</h3>
+<p>Counts number of values in each column and returns this data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">OPERATE</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">COUNT</span><span class="p">()</span>
+</code></pre></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Oscar Smith, Elphinstone Pty Ltd
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
